@@ -131,12 +131,32 @@ const temp_cats = [
   },
 ];
 function Navbar() {
-  return <div className="navbar">nav</div>;
+  // return <div className="navbar">
+  return <div className="Header">
+  <div className="inner_header">
+      <div className="logo_container" >
+          <a href=""><img src="./img/S3_Logo_aw.png" alt="SoundThree" style={"width: 200px; height:60px"}/></a>
+          {/* <!-- <h1>Sound<span>3</span></h1> --> */}
+      </div>
+      <ul className="navigation">
+          <a href=""><li>Home</li></a>
+          <a href=""><li>Browse</li></a>
+          <a href=""><li>Genres</li></a>
+          <a href=""><li>Whatever</li></a>
+          <a href=""><li>Something</li></a>
+          <a href=""><li>Else</li></a>
+
+          <form action="" className="search_box">
+              <input type="text" placeholder="Search" id="" />
+              <button type="submit">🔎︎</button>
+          </form>
+      </ul>
+ </div>
+</div>
 }
 
 function Sidebar() {
   const [cats, setCats] = useState(temp_cats);
-
   return (
     <div className="sidebar">
       {cats.map((c) => (
