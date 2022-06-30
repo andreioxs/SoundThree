@@ -10,6 +10,10 @@ body {
 
 }
 
+li{
+  list-style: none;
+}
+
 .inner_header{
   width: 90%;
   height: 100%;
@@ -117,7 +121,7 @@ a:hover {
   
 }
 .song-list {
-  background: cyan;
+  background: antiquewhite;
   height: 100%;
   width: 100%;
   overflow-y: scroll;
