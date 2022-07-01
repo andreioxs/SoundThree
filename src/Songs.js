@@ -12,8 +12,7 @@ function Songs() {
             console.log(data)
             setSong(data)})
             .catch((error) => console.log(error))
-        }
-        
+        }    
         console.log(fetchMusic())
       }, []);
 
