@@ -29,7 +29,7 @@ function Songs() {
                             <div><img src={sg.image} /></div>
                             <div>{sg.title}</div> 
                             <div>{sg.singer}</div>
-                            <div>▶</div>
+                            <div><audio src={sg.url} controls/></div>
                             <div>❤️</div>
                         </div>
                     )
